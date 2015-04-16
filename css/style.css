@@ -1,203 +1,322 @@
-body{
-    background-image: URL(../img/banner.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: "Raleway",Arial,Helvetica,sans-serif;
-    font-weight: 400;
-    font:17px;
-    line-height: 2;
-    color:#666;
-
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #666;
 }
 .ba-container{
     width:960px;
     margin-left: auto;
     margin-right: auto;
 }
-/*Typo*/
-a{
+a {
     text-decoration: none;
-    text-transform: uppercase;
-    color:#fff;
+    color: #ddd;
 }
-h1,h2,h3,h4,h5,h6{
-    color:#484848;
-    font-weight: normal;
-    line-height: 1;
-    text-transform: uppercase;
-    line-height: 1.5;
-
+a:hover {
+    color: #fff;
 }
-p{
-    line-height: 1.5;
-}
-
-/*Header*/
-.ba-header{
-    line-height: 3.25;
-}
-.ba-header h1{
-    text-transform: uppercase;
-    font-size: 1.25em;
-    color:#ffffff;
-    position: absolute;
-    left:40px;
-    top:60px;
-}
-.ba-header strong{
-    font-weight: 700;
-}
-.ba-header nav{
-    font-size: 21px;
-    position: absolute;
-    right:35px;
-    top:35px;
-}
-.ba-header nav li{
-    display: inline-block;
-    margin-left: 40px;
-
-}
-.ba-header nav a{
-    color:#ddd;
-}
-
-/*Banner*/
-.ba-banner{
-    background-image: url(../img/overlay.png);
-    background-attachment: fixed;
-    background-size: cover ;
-    padding:250px 0 200px 0;
-    text-align: center;
-}
-.ba-banner .logo{
-    color:#fff;
-    text-transform: uppercase;
-    font-size: 56px;
-    line-height: 1.3;
+p {
+    font-size: 17px;
     margin-bottom: 8px;
 }
-.ba-banner p{
-    color:#aaa;
-    font-size: 25px;
-    margin-bottom: 28px;
+strong {
+    font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #484848;
     text-transform: uppercase;
 }
-/*Main*/
-.ba-main{
-    background: #ffffff;
-    padding: 90px 0 65px;
+h1 {
+    font-size: 56px;
 }
-.ba-main h1{
-    font-size: 48px;
-    display: inline-block;
-    font-weight: 700;
+h2 {
+    font-size: 50px;
 }
-.ba-main h2{
-    font-size: 27px;
-    font-weight: 400;
-}
-.ba-main p{
-    padding-bottom: 32px;
-}
-/*Photo*/
-.ba-photo{
-    background-color: #f6f6f6;
-    padding: 90px 0 65px;
-
-}
-.ba-photo img{
-    display:block;
-    width:100%;
-}
-.ba-photo h2{
-    font-size: 48px;
-    font-weight: 700;
-}
-.ba-photo p{
-    font-size: 20px;
-    color:#aaa;
-}
-.ba-photo h3{
-    background-color: #fff;
-    box-shadow: 0  1px 1px rgba(0, 0, 0, 0.15);
-    display: block;
-    padding: 32px 16px;
-    font-weight: 700;
-
-}
-/*Cont*/
-.ba-cont{
-    background-color: #fff;
-}
-.ba-cont h2{
+h3 {
     font-size: 40px;
-    text-align: center;
 }
-.ba-cont p{
-    font-size: 20px;
-    text-align: center;
+h4 {
+    font-size: 32px;
 }
-.ba-cont .round img{
-    border: 8px solid rgba(144, 144, 144, 0.25);
-    border-radius: 100%;
+h5,h6 {
+    font-size: 24px;
 }
-.ba-grid{
-    display: inline;
-}
-.content header p{
-    color: #aaa;
-    text-transform: uppercase;
-    margin: 0 24px 0;
+/* Buttons */
 
-}
-.ba-grid .ba-width:nth-child(odd) .content, .ba-grid .ba-width:nth-child(odd) .round {
-    float: right;
-     margin-right: 5%;
-    text-align: right;
-}
-.ba-grid .ba-width:nth-child(even) .content, .ba-grid .ba-width:nth-child(even) .round {
-    float: leftt;
-    margin-left: 5%;
-    text-align: left;
-}
-/*Row*/
-.ba-bg-primary .ba-button,
-.ba-bg-primary button,
-.ba-bg-primary input[type="button"],
-.ba-bg-primary input[type="submit"],
-.ba-bg-primary input[type="reset"]{
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
     background-color: #f32853;
-    color:#fff;
-    font-size: 22px;
+    color: #fff;
     display: inline-block;
-    border:0;
+    height: 63px;
+    line-height: 63px;
     border-radius: 4px;
-    font-weight: 700;
-    padding:0 37px;
-    line-height: 3.25;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 35px;
+    font-size: 21px;
+    text-transform: uppercase;
 }
-.ba-bg-secondary .ba-button,
-.ba-bg-secondary button,
-.ba-bg-secondary input[type="button"],
-.ba-bg-secondary input[type="submit"],
-.ba-bg-secondary input[type="reset"]{
-    background-color: #323037;
-    color:#fff;
-    font-size: 22px;
-    display: inline-block;
-    border:0;
-    border-radius: 4px;
-    font-weight: 700;
-    padding:0 37px;
-    line-height: 3.25;
-}
-/*Footer*/
-footer{
-    background: #f6f6f6;
-    color:#aaa;
-    padding:128px 0 96px;
-    text-align: center;
 
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+    background-color: #f44066;
+}
+
+.button.alt {
+    background-color: #323037;
+}
+.button.alt:hover {
+    background-color: #3e3c45;
+}
+
+/* Wrap + Sections */
+
+.wrap {
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../img/overlay.png'), url('../img/banner.jpg');
+}
+.section {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 96px 0 64px 0;
+}
+/* Header Section */
+
+.main-header {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    height: 52px;
+    line-height: 3.25;
+}
+.main-header h1 {
+    position: absolute;
+    top:32px;
+    left: 40px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+}
+.main-header a {
+    color: #fff;
+}
+.main-nav ul li a {
+    color: #ddd;
+}
+.main-nav ul li a:hover {
+    color: #fff;
+}
+.main-header ul {
+    font-size: 100%;
+    text-align: right;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+.main-header ul li {
+    display: inline-block;
+    font-size: 100%;
+    margin-left: 40px;
+}
+.main-header ul:first-child  {
+    margin-left: 0;
+}
+
+/* Section Banner */
+
+.banner {
+    padding: 175px 0 190px 0;
+    text-transform: uppercase;
+}
+.banner h2 {
+    font-size:56px;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+.banner p {
+    color: #aaa;
+    font-size: 24px;
+    margin-bottom: 28px;
+    line-height: 1.75;
+}
+
+/* Section main */
+.main {
+    background-color: #fff;
+    line-height: 1.5;
+}
+.major {
+    margin-bottom: 96px;
+    text-transform: uppercase;
+}
+.major h2 {
+    line-height: 1.5;
+}
+.major p {
+    font-size: 27px;
+    color: #aaa;
+    margin-top: 16px;
+    line-height: 1.5;
+}
+.minor p {
+    font-size: 100%;
+    line-height: 2;
+}
+
+/* Section Style 2 */
+.secondary {
+    background-color: #f6f6f6;
+}
+.secondary .button {
+    display: inline-block;
+    margin-bottom: 32px;
+}
+.secondary .button:first-of-type {
+    margin-right: 14px;
+}
+.image-big {
+    /*padding-bottom: 3em;*/
+    margin-bottom: 60px;
+    float: left;
+}
+.image-big h3 {
+    display: block;
+    background-color: #fff;
+    padding: 32px 16px;
+    margin-bottom: 0;
+    font-size: 21px;
+    line-height: 1.5;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+}
+.image-big img {
+    width: 578px;
+    display: block;
+}
+.image-big.right {
+    margin-left: 44px;
+}
+
+/* Section Three Styles */
+.image-circle img {
+    height: 180px;
+    width: 180px;
+    border: 8px solid rgba(144, 144, 144, 0.25);
+    border-radius: 50%;
+}
+.image-circle {
+    height: 180px;
+    width: 180px;
+}
+.special h4 {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.special .major p {
+    font-size: 14px;
+    margin-top: 8px ;
+    margin-bottom: 18px;
+}
+.ba-text-right.content {
+    padding-right: 10px;
+    margin-bottom: 48px;
+}
+.ba-text-left.content {
+    padding-left: 10px;
+    margin-bottom: 48px;
+}
+.content>.major {
+    margin-bottom: 18px;
+}
+.special p {
+    font-size: 17pt;
+    line-height: 1.95;
+}
+
+/* Section Style 3 */
+
+.inf {
+    /*background-color: transparent;*/
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../img/overlay.png'), url('../img/banner.jpg');
+
+}
+.inf .section {
+    padding-bottom: 50px;
+}
+.inf h2 {
+    color: #fff;
+}
+.inf .section .major {
+    margin-bottom: 46px;
+}
+.inf .major p {
+    margin-bottom: 28px;
+}
+.inf .button {
+    margin-bottom: 32px;
+}
+/* Footer */
+
+.footer {
+    padding: 108px 0 96px 0;
+    background-color: #fff;
+    color: #aaa;
+}
+.footer a {
+    color: #aaa;
+}
+.footer a:hover {
+    color: #666;
+}
+.icons {
+    margin-bottom: 45px;
+}
+.icons li, .footer-nav li {
+    display: inline-block;
+}
+.icons li {
+    font-size: 24px;
+    padding-right: 40px;
+}
+.icons li:last-child {
+    padding-right: 0;
+}
+.footer a {
+    color: #aaa;
+}
+.footer-nav {
+    margin: 32px 0;
+}
+.footer-nav li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 ;
+    border-left: solid;
+    border-width: 1px;
+    border-color: rgba(144, 144, 144, 0.25);
+    margin-left: 24px;
+    padding-left: 24px;
+}
+.footer-nav li:first-child {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
 }
